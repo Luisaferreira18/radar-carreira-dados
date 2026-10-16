@@ -1,0 +1,6 @@
+# Mesma quebra de linha (LF) no Windows e no robô do GitHub (Linux):
+# assim os arquivos de dados gerados ficam idênticos nos dois ambientes.
+* text=auto eol=lf
+*.gz binary
+*.xlsx binary
+*.png binary

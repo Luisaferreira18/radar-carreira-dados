@@ -1,0 +1,34 @@
+# dependências
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+
+# Next.js
+/.next/
+/out/
+/build
+next-env.d.ts
+*.tsbuildinfo
+
+# Vercel
+.vercel
+
+# ambiente
+.env*
+.DS_Store
+*.pem
+npm-debug.log*
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# dados brutos pesados (o script baixa de novo); o recorte original fica versionado
+/data/raw/caged/
+/data/tmp/
+*.part
+
+# worker do MapLibre: copiado do node_modules no postinstall (a Vercel gera no build)
+/public/vendor/
