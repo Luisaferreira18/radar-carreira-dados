@@ -2,6 +2,8 @@
 
 **🔗 Acesse: [radar-carreira-dados.vercel.app](https://radar-carreira-dados.vercel.app)**
 
+[![Atualização dos dados](https://github.com/Luisaferreira18/radar-carreira-dados/actions/workflows/atualizar-dados.yml/badge.svg)](https://github.com/Luisaferreira18/radar-carreira-dados/actions/workflows/atualizar-dados.yml)
+
 Painel interativo com **dados públicos oficiais** sobre o mercado de trabalho em **Dados e Tecnologia em Minas Gerais** (Novo CAGED) e sobre as **vagas autorizadas em concursos federais** (Ministério da Gestão).
 
 ![Painel de mercado de Dados e TI — modo claro](docs/prints/mercado-claro.png)
