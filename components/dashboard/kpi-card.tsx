@@ -36,7 +36,10 @@ export function KpiCard({ titulo, valor, variacao, direcao, sentido = "maior-mel
           <TooltipContent className="max-w-64 text-pretty">{definicao}</TooltipContent>
         </Tooltip>
       </div>
-      <p className="text-2xl font-semibold tracking-tight sm:text-[1.7rem]">{valor}</p>
+      <div className="flex items-end justify-between gap-3">
+        <p className="text-2xl font-semibold tracking-tight sm:text-[1.7rem]">{valor}</p>
+        {tendencia && <Sparkline valores={tendencia} className="mb-1.5 h-7 w-16 shrink-0" />}
+      </div>
       <div className="flex items-end justify-between gap-3">
         <div className="flex min-w-0 flex-col gap-1">
           {variacao ? (
@@ -55,7 +58,6 @@ export function KpiCard({ titulo, valor, variacao, direcao, sentido = "maior-mel
           ) : null}
           <span className="truncate text-xs text-muted-foreground">{comparacao}</span>
         </div>
-        {tendencia && <Sparkline valores={tendencia} className="h-7 w-20 shrink-0" />}
       </div>
     </Card>
   )
